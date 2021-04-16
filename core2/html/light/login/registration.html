@@ -1,0 +1,34 @@
+<form class="form-main" onsubmit="CoreLogin.registration(this); return false">
+    <input name="action" type="hidden" />
+    <!-- BEGIN logo -->
+    <div class="container-fluid logo-container">
+        <img src="{logo}" alt="logo"/>
+    </div>
+    <!-- END logo -->
+
+    <h4 class="text-center">_tr(Регистрация)</h4>
+    <div class="text-center text-danger"></div>
+    <div class="text-center text-success"></div>
+    <br>
+
+    <div class="form-registration">
+
+        <!-- BEGIN field -->
+        <div class="form-group">
+            <input type="[TYPE]" name="[NAME]" class="form-control"
+                   placeholder="[TITLE]" [REQUIRED]>
+        </div>
+        <!-- END field -->
+
+        <button type="submit" class="btn-login has-spinner">_tr(Зарегистрироваться)</button>
+
+    </div>
+    <div class="form-footer">
+        <a href="index.php" class="text-muted pull-left">_tr(Войти)</a>
+
+        <!-- BEGIN restore -->
+        <a href="index.php?core=restore" class="text-muted pull-right">_tr(Забыли пароль)</a>
+        <!-- END restore -->
+        <div class="clearfix"></div>
+    </div>
+</form>

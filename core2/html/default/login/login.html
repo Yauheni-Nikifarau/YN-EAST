@@ -1,0 +1,32 @@
+<div class="form-container form-main">
+	<!-- BEGIN logo --><img src="{logo}" alt=""/><!-- END logo --><br/><br/>
+	<b><span class="text-danger"></span></b><br/><br/>
+	<form method="POST" onsubmit="CoreLogin.login(this); return false" id="loginForm">
+		<table>
+			<tr>
+				<td align="right">_tr("Логин или email:")</td>
+				<td align="left"><input id="login" name="login" type="text" value=""/></td>
+			</tr>
+			<tr>
+				<td align="right">_tr("Пароль:")</td>
+				<td align="left"><input name="password" type="password" id="gfhjkm" autocomplete="off"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="left"><button class="button has-spinner" type="submit" id="enter">_tr(Войти)</button></td>
+			</tr>
+		</table>
+	</form>
+	<!-- BEGIN ext_actions -->
+	<br><br>
+	<div>
+		<!-- BEGIN registration -->
+		<a href="index.php?core=registration" class="text-muted pull-left">_tr(Регистрация)</a>
+		<!-- END registration -->
+		<!-- BEGIN restore -->
+		<a href="index.php?core=restore" class="text-muted pull-right">_tr(Забыли пароль)</a>
+		<!-- END restore -->
+		<div class="clearfix"></div>
+	</div>
+	<!-- END ext_actions -->
+</div>

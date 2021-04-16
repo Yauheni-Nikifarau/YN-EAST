@@ -1,0 +1,58 @@
+{
+  "name": "easterism/core2",
+  "type": "framework",
+  "description": "Fullstack framework for business application",
+  "keywords": ["framework"],
+  "homepage": "https://github.com/easterism/core2",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "misterEaster",
+      "email": "easter.by@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Shabunin Igor",
+      "email": "shabuninil24@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "classmap-authoritative": true,
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "laminas/laminas-session": "2.9.*",
+    "laminas/laminas-cache": "2.9.*",
+    "laminas/laminas-serializer": "2.9.*",
+    "laminas/laminas-validator": "2.12.*",
+    "laminas/laminas-mail": "2.10.*",
+    "laminas/laminas-i18n": "2.10.*",
+    "zf1/zend-config": "~1.12",
+    "zf1/zend-acl": "~1.12",
+    "zf1/zend-ldap": "~1.12",
+    "zf1/zend-auth": "~1.12",
+    "belhard/zend-db": "dev-master",
+    "belhard/xajax": "dev-master",
+    "belhard/floatthead": "dev-master",
+    "belhard/simplemodal": "dev-master",
+    "components/jquery": "2.1.4",
+    "monolog/monolog": "1.25.*",
+    "guzzlehttp/guzzle": "6.5.*",
+    "blueimp/jquery-file-upload": "10.*",
+    "phpseclib/phpseclib": "~2.0",
+    "ext-json": "*",
+    "ext-zip": "*",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-gd": "*",
+    "ext-intl": "*",
+    "ext-pdo": "*",
+    "ext-xml": "*"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "mkdir -m 0777 -p vendor/belhard/xajax/xajax_js/deferred"
+    ]
+  }
+}
