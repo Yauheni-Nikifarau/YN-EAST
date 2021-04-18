@@ -36,7 +36,7 @@ class editTable extends initEdit {
      * editTable constructor.
      * @param string $name
      */
-	public function __construct($name) {
+	public function  __construct($name) {
 
 		parent::__construct();
 		$this->resource 		= $name;
@@ -186,7 +186,6 @@ class editTable extends initEdit {
      * @throws Zend_Exception
      */
 	public function showTable($options = []) {
-
 		if ($this->acl->read_all || $this->acl->read_owner) {
 		    $this->HTML .= '<div id="' . $this->main_table_id . '_error" class="error" ' . ($this->error ? 'style="display:block"' : '') . '>' . $this->error . '</div>';
 

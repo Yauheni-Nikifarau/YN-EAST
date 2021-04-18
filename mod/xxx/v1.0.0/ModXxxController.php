@@ -17,7 +17,7 @@ class ModXxxController extends Common {
 
     public function action_index() {
 
-        $tab = new \tabs('roles');
+        $tab = new \tabs('Roles');
         $tab->beginContainer($this->translate->tr("Роли и доступ"));
 
             $list = new \listTable('roles');
@@ -34,13 +34,13 @@ class ModXxxController extends Common {
                     ORDER BY position
                 ";
 
-            $list->addColumn("asdasdas", "", "TEXT");
+            $list->addColumn("column", "", "TEXT");
             $list->addColumn($this->translate->tr("Описание"), "", "TEXT");
             $list->addColumn($this->translate->tr("Иерархия"), "1%", "TEXT");
             $list->addColumn("", "1%", "STATUS");
 
-            $list->paintCondition = "'TCOL_04' == 'N'";
-            $list->paintColor     = "ffffee";
+            $list->paintCondition = "'TCOL_04' == 'Y'";
+            $list->paintColor     = "ff0000";
 
             $list->addURL    = $this->app . "&edit=0";
             $list->editURL   = $this->app . "&edit=TCOL_00";
@@ -49,11 +49,11 @@ class ModXxxController extends Common {
             $list->showTable();
 
         $tab->endContainer();
+
     }
 
     public function action_yyy() {
         $users = $this->db->fetchAll("SELECT * FROM core_users");
-        $users = $this->modAdmin->dataModules->getModuleList();
         echo "<PRE>";print_r($users);
     }
 
